@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form examples</title>
+    </head>
+    <body>
+
+        <B>Electronics Forum</B>
+        
+        <p>Prove you're not a robot, enter the phrase: "I LOVE ELECTRONICS"</p>
+        <form>
+            <textarea name="message" rows="10" cols="30"></textarea>
+        </form>
+
+
+        <form>
+            
+            <form>
+            <label for="username">Name:</label>
+            <input type="text" id="username" name="username" required>
+            </form>
+
+            <p>Choose your favorite components</p>
+        
+            <form>
+                <input type="checkbox" id="html" name="comp_list"value="html">
+                <label for="html">Capacitor</label><br>
+                <input type="checkbox" id="html" name="comp_list"value="html">
+                <label for="html">Resistor</label><br>
+                <input type="checkbox" id="html" name="comp_list"value="html">
+                <label for="html">Inductor</label><br>
+                <input type="checkbox" id="html" name="comp_list"value="html">
+                <label for="html">Heatsink</label><br>
+            </form>
+
+            <p>
+                Favorite piece of machinery 
+            </p>
+            
+            <form>
+                <input type="radio" id="html" name="mac_list"value="html">
+                <label for="html">Power supply</label><br>
+                <input type="radio" id="html" name="mac_list"value="html">
+                <label for="html">DMM</label><br>
+                <input type="radio" id="html" name="mac_list"value="html">
+                <label for="html">Oscilloscope</label><br>
+            </form>
+
+            <p></p>
+
+            <form>
+                <label>Choose a resistor color:</label>
+                <select id="res" name ="res">
+                    <option value="Blue">Blue</option>
+                    <option value="Red">Red</option>
+                    <option value="Green">Green</option>
+                    <option value="Yellow">Yellow</option>
+                </select>
+            </form>
+
+            <p></p>
+
+            <form>
+                <Input type="button" onclick="alert('Good Job!')" value="Click Here once finished.">
+            </form>
+
+            <p></p>
+
+            <p>Please enter three letter code to submit the forum</p>
+            
+            <forms>
+                <label for="code">Code:</label>
+                <input type="text" id="code" name="code" pattern="[a-a-a]{3}" title="Three letter code"><br><br>
+                <input type="submit"> 
+            </forms>
+
+            <p></p>
+
+            <input type="submit" value="Submit">
+
+        </form>
+        
+    </body>
+
+</html>
+
+
