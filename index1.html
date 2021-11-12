@@ -39,10 +39,33 @@
 
         <p id="tag">ELECTRONICS</p>
 
-        <button onclick="document.getElementById('tag').innerHTML=Date()">Effect</button>
+        <button type="button" onclick="Q2()">Effect</button>
         
+        <script>
+            function Q2(){
+                document.getElementById('tag').innerHTML=Date()
+            }
+
+        </script>
         <P></P>
 
+        <button type="button" onclick="Q3()">Visibility</button>
+
+        <script>
+            function Q3(){
+                document.getElementById("tag").style.visibility = "hidden";
+            }
+        </script>
+
+        <p></p>
+
+        <button onclick="Q6();">Date</button>
+
+        <script>
+            function Q6(elem){
+                elem.getElementById('this').innerHTML="hello world";
+            }
+        </script>
 
         <P>More info/FAQ:</P>
         <a href="index2.html" target="_blank">FAQ</a>
