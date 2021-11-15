@@ -17,7 +17,7 @@
         <div>
             <p> This is <span> cool </span></p>
         </div>
-        <img src="230px-Capacitors_(7189597135).jpg" width="104" height="142"> 
+        <img id="img" src="230px-Capacitors_(7189597135).jpg" width="104" height="142"> 
 
         <h2>Types of Components</h2>
         
@@ -39,33 +39,74 @@
 
         <p id="tag">ELECTRONICS</p>
 
-        <button type="button" onclick="Q2()">Effect</button>
-        
+        <button type="button" onclick="Q3()">Effect</button>
+       
         <script>
-            function Q2(){
+            function Q3(){
                 document.getElementById('tag').innerHTML=Date()
             }
 
         </script>
         <P></P>
 
-        <button type="button" onclick="Q3()">Visibility</button>
+        <button type="button" onclick="Q4()">Visibility</button>
 
         <script>
-            function Q3(){
+            function Q4(){
                 document.getElementById("tag").style.visibility = "hidden";
             }
         </script>
 
         <p></p>
 
-        <button onclick="Q6();">Date</button>
+        <button type="button" onclick="Q5()">Change image</button>
 
         <script>
-            function Q6(elem){
-                elem.getElementById('this').innerHTML="hello world";
+            function Q5(){
+                document.getElementById("img").src = "external-content.duckduckgo.com.jpg";
             }
         </script>
+
+        <p></p>
+
+        <button type="button" onclick="Q6(this)">Click me</button>
+
+        <script>
+            function Q6(elem) {
+              elem.innerHTML = "hello world";
+            }
+        </script>
+
+        <p></p>
+
+        <input type="text" onblur="Q7()"\>
+
+        <script>
+            function Q7() {
+                document.getElementById("input").innerHTML = "This feild is required";
+            }
+        </script>
+
+        <p id="input"></p>
+
+        <p></p>
+
+        <div id="ajax">
+        
+        <button type="button" onclick="loadDoc()">Get AJAX</button>
+        </div>
+            
+        <script>
+            function loadDoc() {
+                const xhttp = new XMLHttpRequest();
+                xhttp.onload = function() {
+                    document.getElementById("ajax").innerHTML = this.responseText;
+                }
+                xhttp.open("GET", "Text.txt");
+                xhttp.send();
+            }
+        </script>
+    
 
         <P>More info/FAQ:</P>
         <a href="index2.html" target="_blank">FAQ</a>
