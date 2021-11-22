@@ -2,12 +2,16 @@
 <html>
 <body>
     <?php
-        if(isset($_GET['off'])) {
-            shell_exec("gpio write 7 0");
+        $state=1;
+        if($state=1) {
+            shell_exec("gpio write 7 1");
+            echo "The light is On";
         }
                 
-        else if(isset($_GET['on'])) {
-            shell_exec("gpio write 7 1");
+        else
+        {
+            shell_exec("gpio write 7 0");
+            echo "The light is Off";
         }
     ?>
 
